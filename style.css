@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
 html{
 	font-size: 100%;
 	overflow-y: scroll;
@@ -11,6 +19,8 @@ body{
 	line-height: 1.6;
 	font-size: 15px;
 	margin: 0;
+	background: linear-gradient( rgba(165, 28, 48, .7), rgba(0, 0, 0, .7)), url("img/UEM-pista.jpg");
+	background-size: 1550px 800px;
 }
 
 .logo{
@@ -25,7 +35,7 @@ body{
 }
 
 nav{
-	background-color: rgb(165, 28, 48);
+	background-color: linear-gradient( rgba(165, 28, 48, .7), rgba(0, 0, 0, .7));
 }
 
 nav .menu-div .menu-ul{
@@ -35,7 +45,7 @@ nav .menu-div .menu-ul{
 	justify-content: center;
 	font-size: 18px;
 	color: white;
-	/*background-color: rgb(165, 28, 48);*/
+	background-color: linear-gradient( rgba(165, 28, 48, .7), rgba(0, 0, 0, .7));
 }
 
 nav .menu-div .menu-ul li{
@@ -58,4 +68,48 @@ nav .menu-div .menu-ul li :hover{
 
 nav .menu-div .menu-ul li a{
 	text-decoration: none;
+}
+
+.content{
+	display: flex;
+	justify-content: center;
+}
+
+.titulo{
+	font-size: 22px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+	text-align: center;
+}
+
+.titulo2{
+	font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+	text-align: center;
+}
+
+.inicio{
+	margin-top: 1%;
+	width: 95%;
+	background-color: whitesmoke;
+}
+
+.inicio p{
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 19px;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+
+.inicio h4{
+
+}
+
+.inicio img{
+	width: 45%;
+  	height: 400px;
 }
