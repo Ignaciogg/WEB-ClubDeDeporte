@@ -19,3 +19,4 @@ function seleccionar(link){
     opciones[16].className = "";
     link.className = "seleccionado";
   }
+

@@ -24,7 +24,7 @@
                     <li class="contacto">
                         <a>Contacto</a>
                         <ul class="sub-menu">
-                            <li class="sub-menu-item"><a href="inscripcion" onclick="seleccionar(this)"> Inscripción </a></li>
+                            <li class="sub-menu-item primersub"><a href="inscripcion" onclick="seleccionar(this)"> Inscripción </a></li>
                             <li class="sub-menu-item"><a href="instancia" onclick="seleccionar(this)"> Instancia </a></li>
                             <li class="sub-menu-item"><a href="horarios" onclick="seleccionar(this)"> Horarios </a></li>
                             <li class="sub-menu-item"><a href="entrenadores" onclick="seleccionar(this)"> Entrenadores/as </a></li>
@@ -34,7 +34,7 @@
                     <li class="equipos">
                         <a>Equipos</a>
                         <ul class="sub-menu">
-                            <li class="sub-menu-item"><a href="futbol" onclick="seleccionar(this)">Fútbol</a></li>
+                            <li class="sub-menu-item primersub"><a href="futbol" onclick="seleccionar(this)">Fútbol</a></li>
                             <li class="sub-menu-item"><a href="basket" onclick="seleccionar(this)">Baloncesto</a></li>
                             <li class="sub-menu-item"><a href="volleymasc" onclick="seleccionar(this)">Volleyball masculino</a></li>
                             <li class="sub-menu-item"><a href="volleyfem" onclick="seleccionar(this)">Volleyball femenino</a></li>
@@ -44,14 +44,14 @@
                     <li class="noticias">
                         <a>Blog</a>
                         <ul class="sub-menu">
-                            <li class="sub-menu-item"><a href="resumen" onclick="seleccionar(this)">Resumen de la jornada</a></li>
+                            <li class="sub-menu-item primersub"><a href="resumen" onclick="seleccionar(this)">Resumen de la jornada</a></li>
                         </ul>
                     </li>
 
                     <li class="galeria">
                         <a>Galería de fotos</a>
                         <ul class="sub-menu">
-                            <li class="sub-menu-item"><a href="fotos-futbol" onclick="seleccionar(this)">Fútbol</a></li>
+                            <li class="sub-menu-item primersub"><a href="fotos-futbol" onclick="seleccionar(this)">Fútbol</a></li>
                             <li class="sub-menu-item"><a href="fotos-basket" onclick="seleccionar(this)">Baloncesto</a></li>
                             <li class="sub-menu-item"><a href="fotos-volleymasc" onclick="seleccionar(this)">Volleyball masculino</a></li>
                             <li class="sub-menu-item"><a href="fotos-volleyfem" onclick="seleccionar(this)">Volleyball femenino</a></li>
@@ -74,13 +74,25 @@
                     buscan hacer deporte sin tener que procuparse de créditos, responsabilidades y otra cosa que no sea practicar
                     deporte y divertirse.</p>
                 <p>Hoy en día, contamos con equipos de:</p>
-                <h4>Fútbol Sala</h4><img src="img/futbol.jpeg">
-                <h4>Baloncesto</h4><img src="img/UEM-basket.png">
-                <h4>Volleyball masculino</h4>
-                <h4>Volleyball femenino</h4>
             </div>
         </section>
-
+        
+        <div class="slideshow">
+            <div class="slideshow-wrap">
+                <div class="slide">
+                    <img id="slide1" src="img/UEM-futbol.jpeg" alt="FUTBOL">
+                    <img id="slide2" src="img/UEM-basket.png" alt="BASKET">
+                    <img id="slide3" src="img/UEM-volleyM.jpg" alt="VOLLEY M">
+                    <img id="slide4" src="img/UEM-volleyF.jpg" alt="VOLLEY F">
+                    <div class="slideshow-nav">
+                        <a href="#slide1"></a>
+                        <a href="#slide2"></a>
+                        <a href="#slide3"></a>
+                        <a href="#slide4"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <script src="script.js"></script>
 </body>
