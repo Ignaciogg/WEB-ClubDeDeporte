@@ -1,3 +1,4 @@
+// Seleccionador
 function seleccionar(link){
     var opciones = document.querySelectorAll('#links  a');
     opciones[0].className = "";
@@ -18,12 +19,37 @@ function seleccionar(link){
     opciones[15].className = "";
     opciones[16].className = "";
     link.className = "seleccionado";
-  }
+}
 
-  var modal = document.getElementById("id01");
+// Scroll inicio
+gsap.registerPlugin(ScrollTrigger);
+gsap.utils.toArray('.section').forEach(section => {
+  ScrollTrigger.create({
+    trigger: section,
+    start: 'top top',
+    pin: true,
+    pinSpacing: false
+  });
+});
 
-  window.onclick = function(event){
+// Login
+var modal = document.getElementById("id01");
+window.onclick = function(event){
     if (event.target == modal){
         modal.style.display = "none";
     }
+}
+
+  // Cambio de pagina
+function cambioPagina(pag){
+  location.hash = pag;
+  location.reload();
+}
+    
+if (window.location.hash) { 
+  if (window.location.hash == "#inicio"){
+    location.href="index.html";
+  } else if (window.location.hash == "#galeria"){
+    location.href="galeria.html";
   }
+}

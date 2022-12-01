@@ -53,7 +53,7 @@ nav{
 .menu-ul li{
 	list-style: none;
 	display: flex;
-	margin-right: 3%;
+	margin-right: 4%;
 }
 
 .menu-ul li a{
@@ -77,9 +77,10 @@ ul {
 }
 
 .menu-ul li a{
-	text-decoration:none;
-	padding:10px 12px;
-	display:block;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 10px 12px;
+	display: block;
 	color: white;
 }
 
@@ -90,11 +91,22 @@ ul {
 .sub-menu {
 	display: none;
 	position: absolute;
-	min-width: 12%;
 }
 
-.primersub{
-	margin-top: 21%;
+.sub-menu1 {
+	width: 8.5%;
+}
+
+.sub-menu2, .sub-menu4 {
+	width: 10.5%;
+}
+
+.primersub1{
+	margin-top: 30%;
+}
+
+.primersub {
+	margin-top: 23%;
 }
 
 .menu-ul li:hover > ul {
@@ -103,18 +115,17 @@ ul {
 
 .sub-menu-item {
 	position: relative;
-	left: -50px;
-	text-align: left;
 	color: white;
 	background-color: #a80909;
 }
 
 .sub-menu-item:hover{
+	color: #000;
 	background-color: #ff4343;
 }
 
-.sub-menu-item a:hover{
-	background-color: #ff4343;
+.sub-menu-item a{
+	font-size: 16px;
 }
 
 /* LOGIN */
@@ -231,44 +242,78 @@ span.psw {
 }
 
  /* INCIO */ 
-.content{
+ section {
+	height: 100vh;
+	position: sticky;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
-
-.titulo{
-	font-size: 22px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-	text-align: center;
+  
+.uno {
+	background: #a80909;
 }
-
-.titulo2{
-	font-size: 22px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-	text-align: center;
+  
+.dos {
+	background: #cc2936;
 }
-
-.inicio{
-	margin-top: 1%;
-	width: 95%;
-	background-color: whitesmoke;
+  
+.tres {
+	background: #fa7968;
 }
-
-.inicio p{
-	margin-left: 5%;
-	margin-right: 5%;
-	font-size: 19px;
-    line-height: 25px;
-    margin-bottom: 12px;
+  
+.cuatro {
+	background: #ebbab9;
 }
-
-.inicio img{
-	width: 45%;
-  	height: 100%;
+  
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 95vh;
+	padding: 3rem calc((100vw - 1300px) / 2);
+}
+  
+.column-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	color: #000;
+	padding: 0rem 2rem;
+}
+  
+.column-left h1 {
+	margin-bottom: 1rem;
+	font-size: 45px;
+	font-style: italic;
+}
+  
+.column-left p {
+	margin-bottom: 2rem;
+	font-size: 45px;
+	line-height: 1.1;
+}
+  
+.column-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 2rem;
+}
+  
+.image {
+	max-width: 700px;
+	max-height: 800px;
+}
+  
+.text {
+	color: #fff;
+}
+  
+@media screen and (max-width: 768px) {
+	.container {
+	  grid-template-columns: 1fr;
+	}
 }
 
 .slideshow{

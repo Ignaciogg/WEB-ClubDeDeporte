@@ -12,8 +12,8 @@
 
 <body>
     <header>
-        <div class="logo">
-            <img src="img/club-clandestino-de-deporte-uem-logo.png">
+        <div class="logo" id="inicio">
+            <img src="img/club-clandestino-de-deporte-uem-logo.png" href="#inicio" onclick="seleccionar(this)">
         </div>
 
         <!-- NAV -->
@@ -21,12 +21,12 @@
             <div class="menu-div">
                 <ul class="menu-ul">
 
-                    <li><a href="inicio" onclick="seleccionar(this)">Inicio</a></li>
+                    <li><a href="#inicio" onclick="cambioPagina('inicio')">Inicio</a></li>
 
                     <li class="contacto">
                         <a>Contacto</a>
-                        <ul class="sub-menu">
-                            <li class="sub-menu-item primersub"><a href="inscripcion" onclick="seleccionar(this)"> Inscripción </a></li>
+                        <ul class="sub-menu sub-menu1">
+                            <li class="sub-menu-item primersub1"><a href="inscripcion" onclick="seleccionar(this)"> Inscripción </a></li>
                             <li class="sub-menu-item"><a href="instancia" onclick="seleccionar(this)"> Instancia </a></li>
                             <li class="sub-menu-item"><a href="horarios" onclick="seleccionar(this)"> Horarios </a></li>
                             <li class="sub-menu-item"><a href="entrenadores" onclick="seleccionar(this)"> Entrenadores/as </a></li>
@@ -35,7 +35,7 @@
 
                     <li class="equipos">
                         <a>Equipos</a>
-                        <ul class="sub-menu">
+                        <ul class="sub-menu sub-menu2">
                             <li class="sub-menu-item primersub"><a href="futbol" onclick="seleccionar(this)">Fútbol</a></li>
                             <li class="sub-menu-item"><a href="basket" onclick="seleccionar(this)">Baloncesto</a></li>
                             <li class="sub-menu-item"><a href="volleymasc" onclick="seleccionar(this)">Volleyball masculino</a></li>
@@ -43,7 +43,7 @@
                         </ul>
                     </li>
 
-                    <li class="noticias">
+                    <li class="noticias sub-menu3">
                         <a>Blog</a>
                         <ul class="sub-menu">
                             <li class="sub-menu-item primersub"><a href="resumen" onclick="seleccionar(this)">Resumen de la jornada</a></li>
@@ -52,11 +52,11 @@
 
                     <li class="galeria">
                         <a>Galería de fotos</a>
-                        <ul class="sub-menu">
-                            <li class="sub-menu-item primersub"><a href="fotos-futbol" onclick="seleccionar(this)">Fútbol</a></li>
-                            <li class="sub-menu-item"><a href="fotos-basket" onclick="seleccionar(this)">Baloncesto</a></li>
-                            <li class="sub-menu-item"><a href="fotos-volleymasc" onclick="seleccionar(this)">Volleyball masculino</a></li>
-                            <li class="sub-menu-item"><a href="fotos-volleyfem" onclick="seleccionar(this)">Volleyball femenino</a></li>
+                        <ul class="sub-menu sub-menu4">
+                            <li class="sub-menu-item primersub" onclick="cambioPagina('galeria')"><a>Fútbol</a></li>
+                            <li class="sub-menu-item" onclick="cambioPagina('galeria')"><a>Baloncesto</a></li>
+                            <li class="sub-menu-item" onclick="cambioPagina('galeria')"><a>Volleyball masculino</a></li>
+                            <li class="sub-menu-item" onclick="cambioPagina('galeria')"><a>Volleyball femenino</a></li>
                         </ul>
                     </li>
 
@@ -70,7 +70,7 @@
 
         <!-- LOGIN -->
         <div id="id01" class="modal">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Login">&times;</span>
         
             <form class="modal-content animate" action="/action_page.php">
                 <div class="imgcontainer">
@@ -95,33 +95,51 @@
         </div>
 
         <!-- INICIO -->
-        <section class="content">
-            <div class="inicio">
-                <h3 class="titulo">Bienvenidos al Club</h3>
-                <h3 class="titulo2">Clandestino de Deporte</h3>
-                <p>Somos un grupo de estudiantes de la Universidad Europea de Madrid con una idea: crear un club para los estudiantes que 
-                    buscan hacer deporte sin tener que procuparse de créditos, responsabilidades y otra cosa que no sea practicar
-                    deporte y divertirse.</p>
-                <p>Hoy en día, contamos con equipos de:</p>
-
-                <div class="slideshow">
-                    <div class="slideshow-wrap">
-                        <div class="slide">
-                            <img id="slide1" src="img/UEM-basket.png" alt="BASKET">
-                            <img id="slide2" src="img/UEM-futbol.jpeg" alt="FUTBOL">
-                            <img id="slide3" src="img/UEM-volleyM.jpg" alt="VOLLEY M">
-                            <img id="slide4" src="img/UEM-volleyF.jpg" alt="VOLLEY F">
-                            <div class="slideshow-nav">
-                                <a href="#slide1"></a>
-                                <a href="#slide2"></a>
-                                <a href="#slide3"></a>
-                                <a href="#slide4"></a>
-                            </div>
-                        </div>
-                    </div>
+        <section class="seccion uno">
+            <div class="container">
+                <div class="column-left">
+                    <h1 class="text">Bienvenidos al club clandestino de deporte</h1>
+                </div>
+                <div class="column-right">
+                    <img src="./img/UEM-futbol.jpeg" class="image" />
                 </div>
             </div>
         </section>
+
+        <section class="seccion dos">
+            <div class="container">
+                <div class="column-left">
+                    <p class="text">
+                    Delicious and nutritious foods that you can easily access
+                    </p>
+                </div>
+                <div class="column-right">
+                    <img src="./images/img-2.jpg" class="image" />
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion tres">
+            <div class="container">
+                <div class="column-left">
+                    <p class="text">Unique flavors and options to choose from</p>
+                </div>
+                <div class="column-right">
+                    <img src="./images/img-3.jpg" class="image" />
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion cuatro">
+            <div class="container">
+                <div class="column-left">
+                    <p class="text">We even serve ice cream</p>
+                </div>
+                <div class="column-right">
+                    <img src="./images/img-4.jpg" class="image" />
+                </div>
+            </div>
+          </section>
         
     </header>
     <script src="script.js"></script>
