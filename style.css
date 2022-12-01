@@ -123,22 +123,22 @@ form {
 }
   
 input[type=text], input[type=password] {
-	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
 	display: inline-block;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
+	width: 20%;
 }
   
 button {
-	background-color: #04AA6D;
+	background-color: #a80909;
 	color: white;
 	padding: 14px 20px;
 	margin: 8px 0;
 	border: none;
 	cursor: pointer;
-	width: 100%;
+	width: 20%;
 }
   
 button:hover {
@@ -157,7 +157,7 @@ button:hover {
 }
   
 img.avatar {
-	width: 40%;
+	width: 25%;
 	border-radius: 50%;
 }
   
