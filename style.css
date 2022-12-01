@@ -40,6 +40,10 @@ nav{
 	background-color: linear-gradient( rgba(165, 28, 48, .7), rgba(0, 0, 0, .7));
 }
 
+.menu-div{
+	height: 230px;
+}
+
 .menu-ul{
     list-style: none;
     display: flex;
@@ -53,7 +57,7 @@ nav{
 .menu-ul li{
 	list-style: none;
 	display: flex;
-	margin-right: 4%;
+	margin-right: 4.5%;
 }
 
 .menu-ul li a{
@@ -98,7 +102,7 @@ ul {
 }
 
 .sub-menu2, .sub-menu4 {
-	width: 10.5%;
+	width: 11.5%;
 }
 
 .primersub1{
@@ -119,13 +123,12 @@ ul {
 	background-color: #a80909;
 }
 
-.sub-menu-item:hover{
-	color: #000;
-	background-color: #ff4343;
-}
-
 .sub-menu-item a{
 	font-size: 16px;
+}
+
+.sub-menu-item a:hover{
+	color: #000;
 }
 
 /* LOGIN */
@@ -243,7 +246,7 @@ span.psw {
 
  /* INCIO */ 
  section {
-	height: 100vh;
+	height: 800px;
 	position: sticky;
 	display: flex;
 	justify-content: center;
@@ -266,7 +269,7 @@ span.psw {
 	background: #ebbab9;
 }
   
-.container {
+.contenedor {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	height: 95vh;
