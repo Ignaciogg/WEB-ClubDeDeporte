@@ -15,6 +15,8 @@
         <div class="logo">
             <img src="img/club-clandestino-de-deporte-uem-logo.png">
         </div>
+
+        <!-- NAV -->
         <nav>
             <div class="menu-div">
                 <ul class="menu-ul">
@@ -60,12 +62,42 @@
 
                     <li class="registro"><a href="registro" onclick="seleccionar(this)">Regístrate</a></li>
 
-                    <li class="login"><a href="login" onclick="seleccionar(this)">Log-in</a></li>
+                    <li class="login"><a onclick="document.getElementById('id01').style.display='block'"">Log-in</a></li>
 
                 </ul>
             </div>
         </nav>
 
+        <!-- LOGIN -->
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        
+            <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                    <img src="img/UEM-usuario.png" alt="Avatar" class="avatar">
+                </div>
+            
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <!-- INICIO -->
         <section class="content">
             <div class="inicio">
                 <h3 class="titulo">Bienvenidos al Club</h3>

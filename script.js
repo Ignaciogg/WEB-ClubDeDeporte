@@ -20,3 +20,10 @@ function seleccionar(link){
     link.className = "seleccionado";
   }
 
+  var modal = document.getElementById("id01");
+
+  window.onclick = function(event){
+    if (event.target == modal){
+        modal.style.display = "none";
+    }
+  }
