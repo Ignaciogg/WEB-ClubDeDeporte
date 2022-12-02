@@ -303,6 +303,12 @@ span.psw {
 	align-items: center;
 	padding: 2rem 2rem;
 }
+
+.column-right p {
+	margin-bottom: 2rem;
+	font-size: 45px;
+	line-height: 1.1;
+}
   
 .image {
 	max-width: 700px;
@@ -371,4 +377,18 @@ span.psw {
 
 .slideshow-nav a:hover{
 	opacity: 1;
+}
+
+/* Footer */
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+}
+
+footer h1{
+	color: white;
+	text-align: center;
+	font-size: 22px;
 }
