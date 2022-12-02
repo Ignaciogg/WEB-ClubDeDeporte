@@ -105,6 +105,10 @@ ul {
 	width: 11.5%;
 }
 
+.sub-menu3{
+	text-align: left;
+}
+
 .primersub1{
 	margin-top: 30%;
 }
@@ -252,6 +256,10 @@ span.psw {
 	justify-content: center;
 	align-items: center;
 }
+
+.seccion1{
+	align-items: flex-end;
+}
   
 .uno {
 	background: #a80909;
@@ -269,7 +277,17 @@ span.psw {
 	background: #ebbab9;
 }
   
-.contenedor {
+.contenedor1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 95vh;
+	padding-top: 3%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 10%;
+}
+
+.contenedor2 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	height: 95vh;
