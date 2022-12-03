@@ -255,8 +255,8 @@ span.psw {
 	to {transform: scale(1)}
 }
 
- /* INCIO */ 
- section {
+/* INCIO */ 
+section {
 	height: 800px;
 	position: sticky;
 	display: flex;
@@ -402,6 +402,35 @@ span.psw {
 
 .slideshow-nav a:hover{
 	opacity: 1;
+}
+
+/* Clasificacion*/
+.quali{
+	background-color: #a80909;
+}
+
+.divquali {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 95vh;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 10%;
+}
+  
+.quali-izq {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0rem 2rem;
+}
+
+.quali-der {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 2rem;
+	color: white;
 }
 
 /* Footer */
