@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="img/club-clandestino-de-deporte-uem-logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Futbol UEM</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo" id="inicio">
+      <img src="img/club-clandestino-de-deporte-uem-logo.png">
+    </div>
+
+    <!-- NAV -->
+    <nav>
+      <div class="menu-div">
+        <ul class="menu-ul">
+
+          <li><a onclick="cambioPagina('inicio')">Inicio</a></li>
+
+          <li class="contacto">
+            <a>Contacto</a>
+            <ul class="sub-menu sub-menu1">
+              <li class="sub-menu-item primersub1"><a href="inscripcion" onclick="seleccionar(this)"> Inscripción </a></li>
+              <li class="sub-menu-item"><a href="instancia" onclick="seleccionar(this)"> Instancia </a></li>
+              <li class="sub-menu-item"><a href="horarios" onclick="seleccionar(this)"> Horarios </a></li>
+            </ul>
+          </li>
+
+          <li class="equipos">
+            <a>Equipos</a>
+            <ul class="sub-menu sub-menu2">
+              <li class="sub-menu-item primersub"><a href="futbol" onclick="seleccionar(this)">Fútbol</a></li>
+              <li class="sub-menu-item"><a href="basket" onclick="seleccionar(this)">Baloncesto</a></li>
+              <li class="sub-menu-item"><a href="volleymasc" onclick="seleccionar(this)">Volleyball masculino</a></li>
+              <li class="sub-menu-item"><a href="volleyfem" onclick="seleccionar(this)">Volleyball femenino</a></li>
+            </ul>
+          </li>
+
+          <li class="noticias sub-menu3">
+            <a>Blog</a>
+            <ul class="sub-menu">
+              <li class="sub-menu-item primersub"><a href="resumen" onclick="seleccionar(this)">Resumen de la
+                  jornada</a></li>
+            </ul>
+          </li>
+
+          <li class="galeria">
+            <a>Galería de fotos</a>
+            <ul class="sub-menu sub-menu4">
+              <li class="sub-menu-item primersub" onclick="cambioPagina('galeria')"><a>Fútbol</a></li>
+              <li class="sub-menu-item" onclick="cambioPagina('galeria')"><a>Baloncesto</a></li>
+              <li class="sub-menu-item" onclick="cambioPagina('galeria')"><a>Volleyball masculino</a></li>
+              <li class="sub-menu-item" onclick="cambioPagina('galeria')"><a>Volleyball femenino</a></li>
+            </ul>
+          </li>
+
+          <li class="registro"><a href="registro" onclick="seleccionar(this)">Regístrate</a></li>
+
+          <li class="login"><a onclick="document.getElementById('id01').style.display='block'"">Log-in</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <!-- LOGIN -->
+        <div id=" id01" class="modal">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Login">&times;</span>
+
+              <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                  <img src="img/UEM-usuario.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                  <label for="uname"><b>Nombre de usuario</b></label>
+                  <input type="text" name="uname" required>
+
+                  <label for="psw"><b>Contraseña</b></label>
+                  <input type="password" name="psw" required>
+
+                  <button type="submit">Login</button>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                  <span class="psw"><a href="#">¿Olvidaste tu contraseña?</a></span>
+                </div>
+              </form>
+      </div>
+
+      <!-- CLASIFICACION -->
+      <section class="seccion1 uno">
+        <div class="contenedor1">
+          <div class="column-left">
+            <table class="resultados">
+              <tr>
+                <th class="jornada">Jornada 1</th>
+                <td class="uni">Univ. Francisco de Vitoria</td>
+                <th>4-5</th>
+                <td class="uni">Univ. Europea</td>
+                <td>Poligono Quince, 42, 28223 Pozuelo de Alarcón, Madrid</td>
+              </tr>
+              <tr>
+                <th class="jornada">Jornada 2</th>
+                <td class="uni">Univ. Europea</td>
+                <th>6-8</th>
+                <td class="uni">Univ. Politécnica</td>
+                <td>Edificio D, C. Tajo, 28670, Madrid</td>
+              </tr>
+              <tr>
+                <th class="jornada">Jornada 3</th>
+                <td class="uni">Univ. Alcalá</td>
+                <th>8-1</th>
+                <td class="uni">Univ. Europea</td>
+                <td>Pl. de San Diego, s/n, 28801 Alcalá de Henares, Madrid</td>
+              </tr>
+              <tr>
+                <th class="jornada">Jornada 4</th>
+                <td class="uni">Univ. Europea</td>
+                <th>5-2</th>
+                <td class="uni">Univ. Nebrija</td>
+                <td>Edificio D, C. Tajo, 28670, Madrid</td>
+              </tr>
+              <tr>
+                <th class="jornada">Jornada 5</th>
+                <td class="uni">Univ. Ceu San Pablo</td>
+                <th>4-11</th>
+                <td class="uni">Univ. Europea</td>
+                <td>C. de Julián Romea, 23, 28003 Madrid</td>
+              </tr>
+              <tr>
+                <th class="jornada">Jornada 6</th>
+                <td class="uni">Univ. Europea</td>
+                <th>4-2</th>
+                <td class="uni">Univ. Rey Juan Carlos</td>
+                <td>Edificio D, C. Tajo, 28670, Madrid</td>
+              </tr>
+              <tr>
+                <th class="jornada">Jornada 7</th>
+                <td class="uni">Univ. Complutense</td>
+                <th>19:30</th>
+                <td class="uni">Univ. Europea</td>
+                <td>Pl. de Ramón y Cajal, 27, 28040 Madrid</td>
+              </tr>
+            </table>
+          </div>
+          <div class="column-right">
+            <table>
+              <tr>
+                <th></th>
+                <th>Equipos</th>
+                <th></th>
+                <th>Partidos</th>
+                <th></th>
+                <th></th>
+                <th>Puntos</th>
+                <th>Goles</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th></th>
+                <th>J</th>
+                <th>G</th>
+                <th>E</th>
+                <th>P</th>
+                <th></th>
+                <th>F</th>
+                <th>C</th>
+              </tr>
+              <tr>
+                <th>1</th>
+                <td>Univ. Alcalá</td>
+                <td>6</td>
+                <td>6</td>
+                <td>0</td>
+                <td>0</td>
+                <td>18</td>
+                <td>47</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>Univ. Complutense</td>
+                <td>6</td>
+                <td>5</td>
+                <td>0</td>
+                <td>1</td>
+                <td>15</td>
+                <td>55</td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td>Univ. Politécnica</td>
+                <td>5</td>
+                <td>4</td>
+                <td>1</td>
+                <td>0</td>
+                <td>13</td>
+                <td>38</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td>Univ. Europea</td>
+                <td>6</td>
+                <td>4</td>
+                <td>0</td>
+                <td>2</td>
+                <td>12</td>
+                <td>32</td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <th>5</th>
+                <td>Univ. Rey Juan Carlos</td>
+                <td>6</td>
+                <td>4</td>
+                <td>0</td>
+                <td>2</td>
+                <td>12</td>
+                <td>22</td>
+                <td>21</td>
+              </tr>
+              <tr>
+                <th>6</th>
+                <td>Univ. Carlos III</td>
+                <td>6</td>
+                <td>3</td>
+                <td>1</td>
+                <td>2</td>
+                <td>10</td>
+                <td>25</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>Univ. Pontífica de Comillas</td>
+                <td>6</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3</td>
+                <td>7</td>
+                <td>29</td>
+                <td>31</td>
+              </tr>
+              <tr>
+                <th>8</th>
+                <td>Univ. Nebrija</td>
+                <td>6</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3</td>
+                <td>7</td>
+                <td>25</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <th>9</th>
+                <td>Univ. CEU San Pablo</td>
+                <td>5</td>
+                <td>1</td>
+                <td>0</td>
+                <td>4</td>
+                <td>3</td>
+                <td>12</td>
+                <td>31</td>
+              </tr>
+              <tr>
+                <th>10</th>
+                <td>Univ. Francisco de Vitoria</td>
+                <td>6</td>
+                <td>1</td>
+                <td>0</td>
+                <td>5</td>
+                <td>3</td>
+                <td>24</td>
+                <td>43</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+  </header>
+  <script src="script.js"></script>
+</body>
+<footer>
+  <h1>Ignacio y Samuel, 2022</h1>
+</footer>
+
+</html>

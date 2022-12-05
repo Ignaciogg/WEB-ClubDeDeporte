@@ -51,5 +51,7 @@ if (window.location.hash) {
     location.href="index.html";
   } else if (window.location.hash == "#galeria"){
     location.href="galeria.html";
+  } else if (window.location.hash == "#futbol"){
+    location.href="futbol.html";
   }
 }

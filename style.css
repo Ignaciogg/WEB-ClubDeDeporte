@@ -1,9 +1,6 @@
  /* GENERAL */ 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Montserrat';
 }
 
@@ -45,6 +42,8 @@ nav{
 }
 
 .menu-ul{
+	margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
     align-items: top;
@@ -66,6 +65,8 @@ nav{
 }
 
 .menu-div {
+	margin: 0;
+    padding: 0;
 	margin:auto;
 	text-align: center;
 	background-color:#a80909;
@@ -93,6 +94,8 @@ ul {
 }
 
 .sub-menu {
+	margin: 0;
+    padding: 0;
 	display: none;
 	position: absolute;
 }
@@ -102,7 +105,7 @@ ul {
 }
 
 .sub-menu2, .sub-menu4 {
-	width: 11.5%;
+	width: 12.5%;
 }
 
 .sub-menu3{
@@ -110,7 +113,7 @@ ul {
 }
 
 .primersub1{
-	margin-top: 30%;
+	margin-top: 35%;
 }
 
 .primersub {
@@ -265,7 +268,8 @@ section {
 }
 
 .seccion1{
-	align-items: flex-end;
+	height: 80%;
+	padding-bottom: 7%;
 }
   
 .uno {
@@ -287,18 +291,18 @@ section {
 .contenedor1 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	height: 95vh;
-	padding-top: 3%;
+	height: 100%;
 	padding-left: 10%;
 	padding-right: 10%;
-	padding-bottom: 10%;
+	align-items: center;
 }
 
 .contenedor2 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	height: 95vh;
-	padding: 3rem calc((100vw - 1300px) / 2);
+	height: 100%;
+	padding-left: 15%;
+	padding-right: 15%;
 }
   
 .column-left {
@@ -405,32 +409,32 @@ section {
 }
 
 /* Clasificacion*/
-.quali{
-	background-color: #a80909;
-}
-
-.divquali {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	height: 95vh;
-	padding-left: 10%;
-	padding-right: 10%;
-	padding-bottom: 10%;
-}
-  
-.quali-izq {
+table{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 0rem 2rem;
-}
-
-.quali-der {
-	display: flex;
-	justify-content: center;
 	align-items: center;
-	padding: 2rem 2rem;
+	justify-content: center;
 	color: white;
+}
+
+th{
+	text-align: center;
+}
+
+td{
+	text-align: center;
+}
+
+.resultados{
+	margin: 0%;
+	width: 120%
+}
+
+.jornada{
+	width: 15%;
+}
+
+.uni{
+	width: 27%;
 }
 
 /* Footer */
@@ -438,7 +442,7 @@ footer{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 50px;
+	height: 10%;
 }
 
 footer h1{
