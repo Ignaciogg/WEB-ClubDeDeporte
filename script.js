@@ -40,22 +40,6 @@ window.onclick = function(event){
     }
 }
 
-// Cambio de pagina
-function cambioPagina(pag){
-  location.hash = pag;
-  location.reload();
-}
-    
-if (window.location.hash) { 
-  if (window.location.hash == "#inicio"){
-    location.href="index.html";
-  } else if (window.location.hash == "#galeria"){
-    location.href="galeria.html";
-  } else if (window.location.hash == "#futbol"){
-    location.href="futbol.html";
-  }
-}
-
 // Slideshow
 var slider_img = document.querySelector('.slider-img');
 var images = ['UEM-basket.png', 'UEM-futbol.jpeg', 'UEM-piscina.png'];
