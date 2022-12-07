@@ -40,7 +40,7 @@ window.onclick = function(event){
     }
 }
 
-  // Cambio de pagina
+// Cambio de pagina
 function cambioPagina(pag){
   location.hash = pag;
   location.reload();
@@ -54,4 +54,25 @@ if (window.location.hash) {
   } else if (window.location.hash == "#futbol"){
     location.href="futbol.html";
   }
+}
+
+// Slideshow
+var slider_img = document.querySelector('.slider-img');
+var images = ['UEM-basket.png', 'UEM-futbol.jpeg', 'UEM-piscina.png'];
+var i = 0;
+
+function anterior(){
+	if(i <= 0) i = images.length;	
+	i--;
+	return setImg();			 
+}
+
+function siguiente(){
+	if(i >= images.length-1) i = -1;
+	i++;
+	return setImg();			 
+}
+
+function setImg(){
+	return slider_img.setAttribute("src", "img/" + images[i]);
 }

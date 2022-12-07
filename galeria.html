@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="style.css">
-    <title>Club Clandestino de Deporte UEM</title>
+    <title>Galería</title>
 </head>
 
 <body>
@@ -92,31 +92,24 @@
                 </div>
             </form>
         </div>
+    </header>
 
-        <!-- INICIO -->
-        <section class="content">
-            <div class="inicio">
-                <h3 class="titulo">Galería de fotos</h3>
-                <div class="slideshow">
-                    <div class="slideshow-wrap">
-                        <div class="slide">
-                            <img id="slide1" src="img/UEM-basket.png" alt="BASKET">
-                            <img id="slide2" src="img/UEM-futbol.jpeg" alt="FUTBOL">
-                            <img id="slide3" src="img/UEM-volleyM.jpg" alt="VOLLEY M">
-                            <img id="slide4" src="img/UEM-volleyF.jpg" alt="VOLLEY F">
-                            <div class="slideshow-nav">
-                                <a href="#slide1"></a>
-                                <a href="#slide2"></a>
-                                <a href="#slide3"></a>
-                                <a href="#slide4"></a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- INICIO -->
+    <div class="contenidoGaleria">
+        <div class="slideshow">
+            <div class="slideshow-wrap">
+                <div class="slide">
+                    <img class="slider-img" src="img/UEM-basket.png">
+                </div>
+                <div class="slideizq">
+                    <span class="fa-solid fa-angles-left" onclick="anterior()"></span>
+                </div>
+                <div class="slideder">
+                    <span class="fa-solid fa-angles-right" onclick="siguiente()"></span>
                 </div>
             </div>
-        </section>
-        
-    </header>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 <footer>
