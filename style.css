@@ -357,6 +357,51 @@ section {
 }
 
 /* Galería*/
+.galeria{
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+	height: 100%;
+	padding-left: 15%;
+	padding-right: 15%;
+	margin-bottom: 5%;
+	/*
+	border-color: white;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-width: 4px;
+	border-bottom-width: 4px;*/
+}
+
+.columnaizq h1{
+	color: white;
+}
+
+.columnaizq h2{
+	margin-bottom: 0;
+	color: white;
+}
+
+.columnaizq h3{
+	margin-top: 0;
+	margin-bottom: 15%;
+	color: white;
+}
+
+.gal1{
+	margin-top: 1%;
+	border-top-width: 8px;
+}
+
+.gal5{
+	border-bottom-width: 8px;
+}
+
+.slider-img{
+	max-width: 950px;
+	max-height: 1200px;
+}
+
 .contenidoGaleria{
 	display: flex;
 	justify-content: center;
