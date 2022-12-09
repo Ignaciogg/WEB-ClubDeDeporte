@@ -474,33 +474,145 @@ section {
 	right: 0;
 }
 
-/* Clasificacion*/
-table{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+/* Clasificacion */
+.contenedor_resultados_clasificacion{
+	display: grid;
+	grid-template-columns: 2fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	width: 75%;
+	background-color: #85161f;
+}
+.h2_table{
+	font-family: 'Montserrat';
 	color: white;
-}
-
-th{
 	text-align: center;
-}
-
-td{
-	text-align: center;
+	font-size: 200%;
 }
 
 .resultados{
-	margin: 0%;
-	width: 120%
+	margin: 0 auto;
+	border: 1px solid white;
+	height: 75%;
+	font-size: large;
+	background-color: #cc2936;
 }
 
-.jornada{
-	width: 15%;
+.clasificacion_table{
+	margin: 0 auto;
+	border: 1px solid white;
+	height: 75%;
+	font-size: large;
+	background-color: #cc2936;
 }
 
-.uni{
-	width: 27%;
+.clasificacion_table tr th, td{
+	width: 50px;
+	border: 1px solid white;
+	text-align: center;
+}
+
+.resultados tr th, td{
+	width: 20%;
+	border: 1px solid white;
+	text-align: center;
+}
+
+.goles_favor{
+	width: 20px;
+}
+.goles_contra{
+	width: 20px;
+}
+
+.top_div_equipos{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.titulo_top_div{
+	flex-direction: column;
+}
+
+.introduccion_equipo p{
+	margin-left: 2rem;
+	margin-right: 2rem;
+	font-size: 150%;
+	line-height: 1.1;
+	color: white;
+}
+
+#image_equipo{
+	max-width: 600px;
+	max-height: 600px;
+	margin:20px;
+	border-radius: 5px;
+}
+
+.h2_table_top{
+	font-family: 'Montserrat';
+	color: white;
+	text-align: center;
+	font-size: 400%;
+	text-align: center;
+}
+
+/* BLOG*/
+#contenido-blog{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 75%;
+}
+
+.blog_content{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	background: #cc2936;
+}
+
+.h2_resumen_blog{
+	margin-bottom: 1rem;
+	font-size: 20px;
+	font-style: italic;
+	color:white;
+	text-align: center;
+}
+
+.estadisticas{
+	margin: 5% 12%;
+	
+}
+
+#content-left{
+	margin-left: 12%;
+	display: grid;
+	grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+}
+
+#content-right{
+	margin-left: 12%;
+	display: grid;
+	grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+}
+
+.resumen{
+	height: 20%;
+	margin-top: 12%;
+}
+
+.resumen p{
+	margin-bottom: 1rem;
+	font-size: 15px;
+	font-style: italic;
+	color:white;
+	text-align: center;
+}
+
+.h2_top_div h2{
+	text-align: center;
 }
 
 /* Footer */

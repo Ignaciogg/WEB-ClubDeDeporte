@@ -41,7 +41,7 @@ window.onclick = function(event){
 }
 
 // Galería
-var slider_img = document.querySelector('.slider-img');
+var slider_img = document.querySelector('.slider_img');
 
 var FJ5 = ['1.jpg'];
 var BJ4, FJ4 = ['1.jpg', '2.jpg'];
@@ -67,36 +67,36 @@ function siguiente(images){
 }
 
 function setImg(images){
+
   if(images == "BJ1")
-    return slider_img.setAttribute("src", "/img/basket/J1/" + images[i]);
+    return slider_img.setAttribute("src", "/img/basket/J1/" + BJ1[i]);
   if(images == "BJ2")
-    return slider_img.setAttribute("src", "/img/basket/J2/" + images[i]);
+    return slider_img.setAttribute("src", "/img/basket/J2/" + BJ2[i]);
   if(images == "BJ3")
-    return slider_img.setAttribute("src", "/img/basket/J3/" + images[i]);
+    return slider_img.setAttribute("src", "/img/basket/J3/" + BJ3[i]);
   if(images == "BJ4")
-    return slider_img.setAttribute("src", "/img/basket/J4/" + images[i]);
+    return slider_img.setAttribute("src", "/img/basket/J4/" + BJ4[i]);
 
   if(images == "FJ1")
-    return slider_img.setAttribute("src", "/img/futbol/J1/" + images[i]);
+    return slider_img.setAttribute("src", "/img/futbol/J1/" + FJ1[i]);
   if(images == "FJ2")
-    return slider_img.setAttribute("src", "/img/futbol/J2/" + images[i]);
+    return slider_img.setAttribute("src", "/img/futbol/J2/" + FJ2[i]);
   if(images == "FJ3")
-    return slider_img.setAttribute("src", "/img/futbol/J3/" + images[i]);
+    return slider_img.setAttribute("src", "/img/futbol/J3/" + FJ3[i]);
   if(images == "FJ4")
-    return slider_img.setAttribute("src", "/img/futbol/J4/" + images[i]);
+    return slider_img.setAttribute("src", "/img/futbol/J4/" + FJ4[i]);
   if(images == "FJ5")
-    return slider_img.setAttribute("src", "/img/futbol/J5/" + images[i]);
+    return slider_img.setAttribute("src", "/img/futbol/J5/" + FJ5[i]);
 
   if(images == "VFJ1")
-    return slider_img.setAttribute("src", "/img/volleyF/J1/" + images[i]);
+    return slider_img.setAttribute("src", "/img/volleyF/J1/" + VFJ1[i]);
   if(images == "VFJ2")
-    return slider_img.setAttribute("src", "/img/volleyF/J2/" + images[i]);
+    return slider_img.setAttribute("src", "/img/volleyF/J2/" + VFJ2[i]);
 
   if(images == "VMJ1")
-    return slider_img.setAttribute("src", "/img/volleyM/J1/" + images[i]);
+    return slider_img.setAttribute("src", "/img/volleyM/J1/" + VMJ1[i]);
   if(images == "VMJ2")
-    return slider_img.setAttribute("src", "/img/volleyM/J2/" + images[i]);
+    return slider_img.setAttribute("src", "/img/volleyM/J2/" + VMJ2[i]);
   if(images == "VMJ3")
-    return slider_img.setAttribute("src", "/img/volleyM/J3/" + images[i]);
-
+    return slider_img.setAttribute("src", "/img/volleyM/J3/" + VMJ3[i]);
 }
