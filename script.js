@@ -40,23 +40,63 @@ window.onclick = function(event){
     }
 }
 
-// Slideshow
+// Galería
 var slider_img = document.querySelector('.slider-img');
-var images = ['UEM-basket.png', 'UEM-futbol.jpeg', 'UEM-piscina.png'];
+
+var FJ5 = ['1.jpg'];
+var BJ4, FJ4 = ['1.jpg', '2.jpg'];
+var BJ2 = ['1.jpg', '2.png', '3.jpg'];
+var BJ3, FJ2, VFJ1, VFJ2, VMJ1, VMJ3 = ['1.jpg', '2.jpg', '3.jpg'];
+var VMJ2 = ['1.jpg', '2.jpg', '3.jpg', '4.jpg'];
+var FJ1 = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg'];
+var BJ1 = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg'];
+var FJ3 = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg'];
+
 var i = 0;
 
-function anterior(){
+function anterior(images){
 	if(i <= 0) i = images.length;	
 	i--;
-	return setImg();			 
+	return setImg(images);			 
 }
 
-function siguiente(){
+function siguiente(images){
 	if(i >= images.length-1) i = -1;
 	i++;
-	return setImg();			 
+	return setImg(images);			 
 }
 
-function setImg(){
-	return slider_img.setAttribute("src", "img/" + images[i]);
+function setImg(images){
+  if(images == "BJ1")
+    return slider_img.setAttribute("src", "/img/basket/J1/" + images[i]);
+  if(images == "BJ2")
+    return slider_img.setAttribute("src", "/img/basket/J2/" + images[i]);
+  if(images == "BJ3")
+    return slider_img.setAttribute("src", "/img/basket/J3/" + images[i]);
+  if(images == "BJ4")
+    return slider_img.setAttribute("src", "/img/basket/J4/" + images[i]);
+
+  if(images == "FJ1")
+    return slider_img.setAttribute("src", "/img/futbol/J1/" + images[i]);
+  if(images == "FJ2")
+    return slider_img.setAttribute("src", "/img/futbol/J2/" + images[i]);
+  if(images == "FJ3")
+    return slider_img.setAttribute("src", "/img/futbol/J3/" + images[i]);
+  if(images == "FJ4")
+    return slider_img.setAttribute("src", "/img/futbol/J4/" + images[i]);
+  if(images == "FJ5")
+    return slider_img.setAttribute("src", "/img/futbol/J5/" + images[i]);
+
+  if(images == "VFJ1")
+    return slider_img.setAttribute("src", "/img/volleyF/J1/" + images[i]);
+  if(images == "VFJ2")
+    return slider_img.setAttribute("src", "/img/volleyF/J2/" + images[i]);
+
+  if(images == "VMJ1")
+    return slider_img.setAttribute("src", "/img/volleyM/J1/" + images[i]);
+  if(images == "VMJ2")
+    return slider_img.setAttribute("src", "/img/volleyM/J2/" + images[i]);
+  if(images == "VMJ3")
+    return slider_img.setAttribute("src", "/img/volleyM/J3/" + images[i]);
+
 }
