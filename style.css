@@ -121,6 +121,10 @@ ul {
 	margin-top: 23%;
 }
 
+.login{
+	cursor: pointer;
+}
+
 .menu-ul li:hover > ul {
 	display: block;
 }
@@ -359,6 +363,64 @@ section {
 	.container {
 	  grid-template-columns: 1fr;
 	}
+}
+
+/*Inscripción*/
+.seccionI{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	height: 80%;
+	padding-bottom: 7%;
+}
+.seccionI ul li{
+	list-style: none;
+	text-decoration: none;
+	margin-top: 2%;
+}
+
+.seccionI ul li img{
+	max-width: 6%;
+	margin-top: 2%;
+}
+
+.seccionI ul li a{
+	font-weight: bold;
+	font-size: 22px;
+	color: white;
+	text-decoration: none;
+}
+
+.seccionI ul li a:hover{
+	color: rgb(252, 206, 206);
+	cursor: pointer;
+}
+
+.seccionI div h1{
+	color: white;
+	font-weight: bold;
+	font-size: 28px;
+	text-decoration: underline;
+}
+
+.columnaL {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding-left: 10%;
+	padding-right: 6%;
+	padding-bottom: 10%;
+}
+
+.columnaR {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding-left: 6%;
+	padding-right: 10%;
+	padding-bottom: 10%;
 }
 
 /* Galería*/
