@@ -345,6 +345,11 @@ section {
 	max-width: 700px;
 	max-height: 800px;
 }
+
+.imageUEM {
+	max-width: 500px;
+	max-height: 750px;
+}
   
 .text {
 	color: #fff;
@@ -483,13 +488,6 @@ section {
 	background-color: #85161f;
 }
 
-.h2_table{
-	font-family: 'Montserrat';
-	color: white;
-	text-align: center;
-	font-size: 200%;
-}
-
 .resultados{
 	margin: 0 auto;
 	border: 1px solid white;
@@ -582,6 +580,22 @@ section {
 	background: #cc2936;
 }
 
+.h2_resumen{
+	margin-top: 10%;
+	font-family: 'Montserrat';
+	color: white;
+	text-align: center;
+	font-size: 200%;
+}
+
+.h2_table{
+	margin-top: 5%;
+	font-family: 'Montserrat';
+	color: white;
+	text-align: center;
+	font-size: 200%;
+}
+
 .h2_resumen_blog{
 	margin-bottom: 1rem;
 	font-size: 20px;
@@ -592,7 +606,7 @@ section {
 
 .estadisticas{
 	margin: 5% 12%;
-	
+	margin-top: 12%;
 }
 
 #content-left{
