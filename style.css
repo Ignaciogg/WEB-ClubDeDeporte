@@ -479,9 +479,10 @@ section {
 	display: grid;
 	grid-template-columns: 2fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	width: 75%;
+	width: 85%;
 	background-color: #85161f;
 }
+
 .h2_table{
 	font-family: 'Montserrat';
 	color: white;
@@ -498,7 +499,8 @@ section {
 }
 
 .clasificacion_table{
-	margin: 0 auto;
+	margin-left: 4%;
+	margin-right: 2%;
 	border: 1px solid white;
 	height: 75%;
 	font-size: large;
@@ -506,22 +508,30 @@ section {
 }
 
 .clasificacion_table tr th, td{
-	width: 50px;
 	border: 1px solid white;
 	text-align: center;
+}
+
+.clasifNum{
+	width: 4%;
+}
+
+.unis{
+	width: 25%
+}
+
+.puntos, .jgep{
+	width: 10%;
+}
+
+.goles{
+	width: 10.7%;
 }
 
 .resultados tr th, td{
 	width: 20%;
 	border: 1px solid white;
 	text-align: center;
-}
-
-.goles_favor{
-	width: 20px;
-}
-.goles_contra{
-	width: 20px;
 }
 
 .top_div_equipos{
@@ -551,7 +561,6 @@ section {
 }
 
 .h2_table_top{
-	font-family: 'Montserrat';
 	color: white;
 	text-align: center;
 	font-size: 400%;

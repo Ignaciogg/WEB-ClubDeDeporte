@@ -48,7 +48,7 @@
               <li class="noticias sub-menu3">
                   <a>Blog</a>
                   <ul class="sub-menu">
-                      <li class="sub-menu-item primersub"><a href="resumen">Resumen de la jornada</a></li>
+                      <li class="sub-menu-item primersub"><a href="/blog.html">Resumen de la jornada</a></li>
                   </ul>
               </li>
 
@@ -71,31 +71,29 @@
     </nav>
 
         <!-- LOGIN -->
-        <div id=" id01" class="modal">
-              <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                title="Close Login">&times;</span>
-
-              <form class="modal-content animate" action="/action_page.php">
-                <div class="imgcontainer">
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Login">&times;</span>
+      
+          <form class="modal-content animate" action="/action_page.php">
+              <div class="imgcontainer">
                   <img src="img/UEM-usuario.png" alt="Avatar" class="avatar">
-                </div>
-
-                <div class="container">
+              </div>
+          
+              <div class="container">
                   <label for="uname"><b>Nombre de usuario</b></label>
                   <input type="text" name="uname" required>
-
+          
                   <label for="psw"><b>Contraseña</b></label>
                   <input type="password" name="psw" required>
-
+          
                   <button type="submit">Login</button>
-                </div>
-
-                <div class="container" style="background-color:#f1f1f1">
-                  <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                    class="cancelbtn">Cancel</button>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                   <span class="psw"><a href="#">¿Olvidaste tu contraseña?</a></span>
-                </div>
-              </form>
+              </div>
+          </form>
       </div>
   </header>
    <!-- CLASIFICACION -->
@@ -166,136 +164,131 @@
         </table>
       </div>
       <div class="grid-bot">
-        <h2 class="h2_table">Clasificacion</h2>
+        <h2 class="h2_table">Clasificación</h2>
         <table class="clasificacion_table">
           <tr>
-            <th></th>
-            <th>Equipos</th>
-            <th colspan="4">Partidos</th>
-            <th>Puntos</th>
-            <th colspan="2s">Goles</th>
-
+            <th colspan="2" rowspan="2">Equipos</th>
+            <th class="puntos" rowspan="2">Puntos</th>
+            <th class="partidos" colspan="4">Partidos</th>
+            <th class="goles" colspan="2">Goles</th>
           </tr>
           <tr>
-            <th></th>
-            <th></th>
-            <th>J</th>
-            <th>G</th>
-            <th>E</th>
-            <th>P</th>
-            <th></th>
-            <th>F</th>
+            <th class="jgep">Ganados</th>
+            <th class="jgep">Empatados</th>
+            <th class="jgep">Perdidos</th>
+            <th class="jgep">Jugados</th>
+            <th class="goles">F</th>
             <th>C</th>
           </tr>
           <tr>
-            <th>1</th>
-            <td>Univ. Alcalá</td>
-            <td>6</td>
-            <td>6</td>
-            <td>0</td>
-            <td>0</td>
-            <td>18</td>
-            <td class="goles_favor">47</td>
-            <td class="goles_contra">10</td>
+            <th class="clasifNum">1</th>
+            <td class="unis">Univ. Alcalá</td>
+            <td class="puntos">18</td>
+            <td class="jgep">6</td>
+            <td class="jgep">0</td>
+            <td class="jgep">0</td>
+            <td class="jgep">6</td>
+            <td class="goles">47</td>
+            <td>10</td>
           </tr>
           <tr>
-            <th>2</th>
-            <td>Univ. Complutense</td>
-            <td>6</td>
-            <td>5</td>
-            <td>0</td>
-            <td>1</td>
-            <td>15</td>
-            <td class="goles_favor">55</td>
-            <td class="goles_contra">14</td>
+            <th class="clasifNum">2</th>
+            <td class="unis">Univ. Complutense</td>
+            <td class="puntos">15</td>
+            <td class="jgep">5</td>
+            <td class="jgep">0</td>
+            <td class="jgep">1</td>
+            <td class="jgep">6</td>
+            <td class="goles">55</td>
+            <td>14</td>
           </tr>
           <tr>
-            <th>3</th>
-            <td>Univ. Politécnica</td>
-            <td>5</td>
-            <td>4</td>
-            <td>1</td>
-            <td>0</td>
-            <td>13</td>
-            <td class="goles_favor">38</td>
-            <td class="goles_contra">22</td>
+            <th class="clasifNum">3</th>
+            <td class="unis">Univ. Politécnica</td>
+            <td class="puntos">13</td>
+            <td class="jgep">4</td>
+            <td class="jgep">1</td>
+            <td class="jgep">0</td>
+            <td class="jgep">5</td>
+            <td class="goles">38</td>
+            <td>22</td>
           </tr>
           <tr>
-            <th>4</th>
-            <td>Univ. Europea</td>
-            <td>6</td>
-            <td>4</td>
-            <td>0</td>
-            <td>2</td>
-            <td>12</td>
-            <td class="goles_favor">32</td>
-            <td class="goles_contra">28</td>
+            <th class="clasifNum">4</th>
+            <td class="unis">Univ. Europea</td>
+            <td class="puntos">12</td>
+            <td class="jgep">4</td>
+            <td class="jgep">0</td>
+            <td class="jgep">2</td>
+            <td class="jgep">6</td>
+            <td class="goles">32</td>
+            <td>28</td>
           </tr>
           <tr>
-            <th>5</th>
-            <td>Univ. Rey Juan Carlos</td>
-            <td>6</td>
-            <td>4</td>
-            <td>0</td>
-            <td>2</td>
-            <td>12</td>
-            <td class="goles_favor">22</td>
-            <td class="goles_contra">21</td>
+            <th class="clasifNum">5</th>
+            <td class="unis">Univ. Rey Juan Carlos</td>
+            <td class="puntos">12</td>
+            <td class="jgep">4</td>
+            <td class="jgep">0</td>
+            <td class="jgep">2</td>
+            <td class="jgep">6</td>
+            <td class="goles">22</td>
+            <td>21</td>
           </tr>
           <tr>
             <th>6</th>
-            <td>Univ. Carlos III</td>
-            <td>6</td>
-            <td>3</td>
-            <td>1</td>
-            <td>2</td>
-            <td>10</td>
-            <td class="goles_favor">25</td>
-            <td class="goles_contra">20</td>
+            <td class="unis">Univ. Carlos III</td>
+            <td class="puntos">10</td>
+            <td class="jgep">3</td>
+            <td class="jgep">1</td>
+            <td class="jgep">2</td>
+            <td class="jgep">6</td>
+            <td class="goles">25</td>
+            <td>20</td>
           </tr>
           <tr>
-            <th>7</th>
-            <td>Univ. Pontífica de Comillas</td>
-            <td>6</td>
-            <td>2</td>
-            <td>1</td>
-            <td>3</td>
-            <td>7</td>
-            <td class="goles_favor">29</td>
-            <td class="goles_contra">31</td>
+            <th class="clasifNum">7</th>
+            <td class="unis">Univ. Pontífica de Comillas</td>
+            <td class="puntos">7</td>
+            <td class="jgep">2</td>
+            <td class="jgep">1</td>
+            <td class="jgep">3</td>
+            <td class="jgep">6</td>
+            <td class="goles">29</td>
+            <td>31</td>
           </tr>
           <tr>
-            <th>8</th>
-            <td>Univ. Nebrija</td>
-            <td>6</td>
-            <td>2</td>
-            <td>1</td>
-            <td>3</td>
-            <td>7</td>
-            <td class="goles_favor">25</td>
-            <td class="goles_contra">32</td>
+            <th class="clasifNum">8</th>
+            <td class="unis">Univ. Nebrija</td>
+            <td class="puntos">7</td>
+            <td class="jgep">2</td>
+            <td class="jgep">1</td>
+            <td class="jgep">3</td>
+            <td class="jgep">6</td>
+            <td class="goles">25</td>
+            <td>32</td>
           </tr>
           <tr>
-            <th>9</th>
-            <td>Univ. CEU San Pablo</td>
-            <td>5</td>
-            <td>1</td>
-            <td>0</td>
-            <td>4</td>
-            <td>3</td>
-            <td class="goles_favor">12</td>
-            <td class="goles_contra">31</td>
+            <th class="clasifNum">9</th>
+            <td class="unis">Univ. CEU San Pablo</td>
+            <td class="puntos">3</td>
+            <td class="jgep">1</td>
+            <td class="jgep">0</td>
+            <td class="jgep">4</td>
+            <td class="jgep">5</td>
+            <td class="goles">12</td>
+            <td>31</td>
           </tr>
           <tr>
-            <th>10</th>
-            <td>Univ. Francisco de Vitoria</td>
-            <td>6</td>
-            <td>1</td>
-            <td>0</td>
-            <td>5</td>
-            <td>3</td>
-            <td class="goles_favor">24</td>
-            <td class="goles_contra">43</td>
+            <th class="clasifNum">10</th>
+            <td class="unis">Univ. Francisco de Vitoria</td>
+            <td class="puntos">3</td>
+            <td class="jgep">1</td>
+            <td class="jgep">0</td>
+            <td class="jgep">5</td>
+            <td class="jgep">6</td>
+            <td class="goles">24</td>
+            <td>43</td>
           </tr>
         </table>
       </div>
