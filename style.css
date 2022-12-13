@@ -144,6 +144,11 @@ ul {
 	color: #000;
 }
 
+#icono-nav {
+    color: #fff;
+    display: none;
+}
+
 /* LOGIN */
 form {
 	border: 3px solid #f1f1f1;
@@ -180,7 +185,7 @@ button:hover {
   
 .imgcontainer {
 	text-align: center;
-	margin: 24px 0 12px 0;
+	margin: 24px 0 4px 0;
 }
   
 img.avatar {
@@ -194,7 +199,7 @@ img.avatar {
 	justify-content: center;
 	align-items: center;
 	padding: 16px;
-	margin-bottom: 2%;
+	margin-bottom: 1%;
 }
   
 span.psw {
@@ -223,7 +228,7 @@ span.psw {
 	overflow: auto;
 	background-color: rgb(0,0,0);
 	background-color: rgba(0,0,0,0.4);
-	padding-top: 60px;
+	padding-top: 20px;
 }
   
 .modal-content {
@@ -433,6 +438,44 @@ section {
 	padding-right: 10%;
 	padding-bottom: 10%;
 }
+
+/* Horario*/
+.horario{
+	width: 85%;
+	color: black;
+	margin-bottom: 8%;
+}
+
+.horario th{
+	width: 10%;
+	color: white;
+}
+
+.titulo-horario{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 3%;
+}
+
+.hora{
+	width: 12%;
+	color: white;
+}
+
+.otro{
+	font-weight: bold;
+	width: 16%;
+}
+
+.piscina{background-color: #A9CCE3;}
+.volM{background-color: #F9E79F;}
+.volF{background-color: #EDBB99;}
+.futsal{background-color: #48C9B0;}
+.fut11{background-color: #A9DFBF;}
+.atlet{background-color: #F1948A ;}
+.bal{background-color: #BB8FCE;}
+.libre{background-color: #D0D3D4;}
 
 /* Galería*/
 .galeria{
@@ -735,4 +778,75 @@ footer h1{
   
 ::-webkit-scrollbar-thumb:hover {
 	background: #85161f; 
+}
+
+/* Responsive*/
+@media screen and (max-width: 1600px) {
+	.menu-ul{
+		font-size: 14px;
+	}
+
+	.sub-menu-item a{
+		font-size: 14px;
+	}
+
+	.image {
+		max-width: 600px;
+		max-height: 600px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        display: none;
+    }
+
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+	.image {
+		max-width: 200px;
+		max-height: 200px;
+	}
+
+	.column-left h1{
+		font-size: 16px;
+	}
+
+	.column-right p, .column-left p, footer h1{
+		font-size: 20px;
+	}
+
+	.columnaR h1, .columnaR a{
+		font-size: 20px;
+	}
+
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+
+    #icono-nav {
+        display: block;
+    }
+
+	section {
+		height: 700px;
+	}
+
+	.seccion1{
+		height: 670px;
+		padding-bottom: 7%;
+	}
 }

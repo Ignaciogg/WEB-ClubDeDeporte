@@ -72,7 +72,7 @@
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
-            
+        
             <!-- LOGIN -->
             <div id="id01" class="modal">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Login">&times;</span>
@@ -101,21 +101,61 @@
         </header>
 
         <div class="seccionI">
-            <div class="columnaL">
-                <h1>Fichas de Inscripción</h1>
-                <ul>
-                    <li><img src="../img/icono-PDF.png"><a href="../docs/ficha-de-suscripcion-alumno-y-empleado.pdf" download>Ficha de inscripción para alumnos</a></li>
-                    <li><img src="../img/icono-PDF.png"><a href="../docs/ficha-de-suscripcion-socio-externo.pdf" download>Ficha de inscripción para socios externos</a></li>
-                    <li><img src="../img/icono-PDF.png"><a href="../docs/folleto-centro-deportivo-villaviciosa-2022-23.pdf" download>Folleto del centro deportivo</a></li>
-                </ul>
-            </div>
-            <div class="columnaR">
-                <h1>Normativa de Deporte UEM</h1>
-                <ul>
-                    <li><img src="../img/icono-PDF.png"><a href="../docs/Normativa_Deporte_Universitario.pdf" download>Normativa general</a></li>
-                    <li><img src="../img/icono-PDF.png"><a href="../docs/protocolo-seguridad-covid-complejo-deportivo.pdf" download>Protocolo de prevención de la COVID-19</a></li>
-                </ul>
-            </div>
+            <table class="horario">
+                <thead>
+                  <caption class="titulo-horario">
+                    HORARIO CURSO 2022/23
+                  </caption>
+                  <th class="hora">HORA</th>
+                  <th>LUNES</th>
+                  <th>MARTES</th>
+                  <th>MIERCOLES</th>
+                  <th>JUEVES</th>
+                  <th>VIERNES</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="hora">17:00 - 18:00</td>
+                    <td class="otro piscina">Piscina</td>
+                    <td class="otro volM">Volley Masculino</td>
+                    <td class="otro libre">LIBRE</td>
+                    <td class="otro libre">LIBRE</td>
+                    <td class="otro volF">Volley Femenino</td>
+                  </tr>
+                  <tr>
+                    <td class="hora">18:00 - 19:00</td>
+                    <td class="otro volF">Volley Femenino</td>
+                    <td class="otro libre">LIBRE</td>
+                    <td class="otro volM">Volley Masculino</td>
+                    <td class="otro piscina">Piscina</td>
+                    <td class="otro libre">LIBRE</td>
+                  </tr>
+                  <tr>
+                    <td class="hora">19:00 - 20:00</td>
+                    <td class="otro atlet">Atletismo</td>
+                    <td class="otro volF">Volley Femenino</td>
+                    <td class="otro bal">Baloncesto</td>
+                    <td class="otro atlet">Atletismo</td>
+                    <td class="otro atlet">Atletismo</td>
+                  </tr>
+                  <tr>
+                    <td class="hora">20:00 - 21:00</td>
+                    <td class="otro fut11">Fútbol 11</td>
+                    <td class="otro bal">Baloncesto</td>
+                    <td class="otro piscina">Piscina</td>
+                    <td class="otro bal">Baloncesto</td>
+                    <td class="otro fut11">Fútbol 11</td>
+                  </tr>
+                  <tr>
+                    <td class="hora">21:00 - 22:00</td>
+                    <td class="otro futsal">Fútbol sala</td>
+                    <td class="otro fut11">Fútbol 11</td>
+                    <td class="otro futsal">Fútbol sala</td>
+                    <td class="otro volM">Volley Masculino</td>
+                    <td class="otro futsal">Fútbol sala</td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
         <script src="../script.js"></script>
     </body>
