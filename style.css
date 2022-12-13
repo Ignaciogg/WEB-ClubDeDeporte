@@ -26,6 +26,7 @@ body{
 	display: flex;
 	justify-content: center;
 	background-color: white;
+	width: 196.3vh;
 }
 
 .logo img{
@@ -145,7 +146,7 @@ ul {
 }
 
 #icono-nav {
-    color: #fff;
+    color: black;
     display: none;
 }
 
@@ -791,15 +792,16 @@ footer h1{
 
 	.image {
 		max-width: 600px;
-		max-height: 600px;
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
+	.logo img{
+		max-width: 15%;
+	}
     nav {
         display: none;
     }
-
     nav.responsive {
         display: block;
         background-color: rgba(0, 0, 0, .8);
@@ -809,43 +811,40 @@ footer h1{
         left: 0;
         padding: 10px 0;
     }
-
-	.image {
-		max-width: 200px;
-		max-height: 200px;
-	}
-
-	.column-left h1{
-		font-size: 16px;
-	}
-
-	.column-right p, .column-left p, footer h1{
-		font-size: 20px;
-	}
-
-	.columnaR h1, .columnaR a{
-		font-size: 20px;
-	}
-
-    nav.responsive ul {
+	nav.responsive ul {
         display: block !important;
         text-align: center;
     }
-
     nav.responsive ul li {
         margin: 5px 0;
     }
-
     #icono-nav {
         display: block;
     }
-
 	section {
 		height: 700px;
 	}
-
 	.seccion1{
 		height: 670px;
 		padding-bottom: 7%;
+	}
+	.contenedor1, .contenedor2{
+		display: flex;
+		flex-direction: column;
+	}
+	.contenedor1 h1{
+		font-size: 36px;
+	}
+	.contenedor2{
+		font-size: 36px;
+	}
+	.image {
+		max-width: 325px;
+	}
+	.column-right p{
+		margin: 0;;
+	}
+	footer{
+		max-height: 20%;
 	}
 }
