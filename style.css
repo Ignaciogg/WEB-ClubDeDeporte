@@ -513,11 +513,6 @@ section {
 	border-bottom-width: 8px;
 }
 
-.slider-img{
-	max-width: 950px;
-	max-height: 1200px;
-}
-
 .contenidoGaleria{
 	display: flex;
 	justify-content: center;
@@ -554,6 +549,10 @@ section {
 	flex: 1 0 100%;
 	scroll-snap-align: start;
 	object-fit: cover;
+}
+
+.slider-img2{
+	max-width: 200px;
 }
 
 .slideshow-wrap i{
