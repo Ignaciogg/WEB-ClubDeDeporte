@@ -635,6 +635,10 @@ section {
 	width: 10.7%;
 }
 
+.anotacion{
+	width: 15%;
+}
+
 .resultados tr th, td{
 	width: 20%;
 	border: 1px solid white;
