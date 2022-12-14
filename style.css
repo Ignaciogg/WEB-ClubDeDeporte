@@ -676,7 +676,7 @@ section {
 }
 
 /* BLOG*/
-#contenido-blog{
+.contenido-blog{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -761,6 +761,13 @@ footer h1{
 	color: white;
 	text-align: center;
 	font-size: 22px;
+}
+
+/* Registro */
+#registro-left{
+	width: 300px;
+	margin: auto;
+	border-radius: 10px;
 }
 
 /* Scrollbar */
