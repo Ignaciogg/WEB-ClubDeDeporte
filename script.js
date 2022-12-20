@@ -1,14 +1,29 @@
-// Animación inicio
+/* Scrolltrigger
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray('.section').forEach(section => {
-  ScrollTrigger.create({
-    trigger: section,
-    start: 'top top',
-    pin: true,
-    pinSpacing: false
-  });
-});
+gsap.to('.seccion',{
+
+})*/
+
+// Nav fixed
+const nav = document.querySelector('#nav');
+const navTop = nav.offsetTop;
+
+function stickyNavigation() {
+  console.log('navTop = ' + navTop);
+  console.log('scrollY = ' + window.scrollY);
+
+  if (window.scrollY >= navTop) {
+    // nav offsetHeight = height of nav
+    document.body.style.paddingTop = nav.offsetHeight + 'px';
+    document.body.classList.add('fixed-nav');
+  } else {
+    document.body.style.paddingTop = 0;
+    document.body.classList.remove('fixed-nav');
+  }
+}
+
+window.addEventListener('scroll', stickyNavigation);
 
 // Login
 var modal = document.getElementById("id01");
