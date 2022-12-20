@@ -26,12 +26,12 @@ body{
 	display: flex;
 	justify-content: center;
 	background-color: white;
-	width: 196.3vh;
+	width: 100%;
 }
 
 .logo img{
-    max-width: 20%;
-    max-height: 20%;
+    width: fit-content;
+	max-height: 60px;
 }
 
 nav{
@@ -506,11 +506,6 @@ section {
 
 .gal1{
 	margin-top: 1%;
-	border-top-width: 8px;
-}
-
-.gal5{
-	border-bottom-width: 8px;
 }
 
 .contenidoGaleria{
@@ -528,11 +523,17 @@ section {
 .item{
 	display: flex;
 	aspect-ratio: 16/9;
+	max-width: 1200px;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
 	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
 	border-radius: 5px;
+}
+
+.item2{
+	aspect-ratio: 4/3;
+	max-width: 400px;
 }
 
 .item::-webkit-scrollbar {
@@ -545,8 +546,10 @@ section {
 	object-fit: cover;
 }
 
-.slider_img2{
-	max-width: 500px;
+.item2 img{
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
 }
 
 .slideizq{
@@ -649,9 +652,10 @@ section {
 }
 
 .h2_table_top{
+	margin-top: 0;
 	color: white;
 	text-align: center;
-	font-size: 400%;
+	font-size: 60px;
 	text-align: center;
 }
 
@@ -696,7 +700,7 @@ section {
 
 .estadisticas{
 	margin: 5% 12%;
-	margin-top: 12%;
+	margin-top: 16%;
 }
 
 #content-left{
@@ -783,9 +787,6 @@ footer h1{
 }
 
 @media screen and (max-width: 800px) {
-	.logo img{
-		max-width: 15%;
-	}
     nav {
         display: none;
     }
