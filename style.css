@@ -128,7 +128,7 @@ ul {
 }
 
 .primersub1{
-	margin-top: 33%;
+	margin-top: 27.5%;
 }
 
 .primersub {
@@ -457,7 +457,7 @@ section {
 	padding-bottom: 10%;
 }
 
-/* INSTANCIA*/
+/* Instancia */
 input[type=text], select, textarea {
 	width: 100%;
 	padding: 12px;
@@ -893,7 +893,12 @@ footer h1{
 	background: #85161f; 
 }
 
-/* Responsive*/
+/* Pantalla grande */
+@media screen and (max-width: 1800px){
+
+}
+
+/* Portátil */
 @media screen and (max-width: 1600px) {
 	.menu-ul{
 		font-size: 14px;
@@ -908,6 +913,7 @@ footer h1{
 	}
 }
 
+/* Móvil */
 @media screen and (max-width: 800px) {
     nav {
         display: none;
