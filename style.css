@@ -45,6 +45,10 @@ nav{
 	z-index: 1;
 }
 
+.fixed-nav .menu-ul{
+	height: 100%;
+}
+
 .menu-div{
 	height: 40px;
 }
@@ -128,11 +132,18 @@ ul {
 }
 
 .primersub1{
-	margin-top: 27.5%;
+	margin-top: 22%;
+	padding-top: 8%;
+}
+
+.primersub2{
+	margin-top: 30%;
+	padding-top: 8%;
 }
 
 .primersub {
-	margin-top: 23%;
+	margin-top: 15%;
+	padding-top: 4%;
 }
 
 .login{
@@ -457,7 +468,7 @@ section {
 	padding-bottom: 10%;
 }
 
-/* Instancia */
+/* INSTANCIA*/
 input[type=text], select, textarea {
 	width: 100%;
 	padding: 12px;
@@ -894,8 +905,10 @@ footer h1{
 }
 
 /* Pantalla grande */
-@media screen and (max-width: 1800px){
-
+@media screen and (max-width: 1700px) {
+	.seccion{
+		height: 1500px;
+	}
 }
 
 /* Portátil */
