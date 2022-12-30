@@ -9,125 +9,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../main/style.css">
   <title>Baloncesto UEM</title>
 </head>
 
 <body>
-  <header>
-    <div class="logo" id="inicio">
-      <img src="../img/club-clandestino-de-deporte-uem-logo.png">
-    </div>
-
-    <!-- NAV -->
-    <div>
-      <nav id="nav">
-        <div class="menu-div">
-            <ul class="menu-ul">
-  
-                <li><a href="../index.html">Inicio</a></li>
-  
-                <li class="contacto">
-                    <a>Contacto</a>
-                    <ul class="sub-menu sub-menu1">
-                        <li class="sub-menu-item primersub1"><a href="../contacto/inscripcion.html"> Inscripción </a></li>
-                        <li class="sub-menu-item"><a href="../contacto/instancia.html"> Instancia </a></li>
-                        <li class="sub-menu-item"><a href="../contacto/horario.html"> Horarios </a></li>
-                    </ul>
-                </li>
-  
-                <li class="equipos">
-                    <a>Equipos</a>
-                    <ul class="sub-menu sub-menu2">
-                      <li class="sub-menu-item primersub"><a href="./equiposF.html">Fútbol</a></li>
-                      <li class="sub-menu-item"><a href="./equiposB.html">Baloncesto</a></li>
-                      <li class="sub-menu-item"><a href="./equiposVM.html">Volleyball Masculino</a></li>
-                      <li class="sub-menu-item"><a href="./equiposVF.html">Volleyball Femenino</a></li>
-                    </ul>
-                </li>
-  
-                <li class="noticias sub-menu3">
-                    <a>Blog</a>
-                    <ul class="sub-menu">
-                        <li class="sub-menu-item primersub"><a href="../contacto/blog.html">Resumen de la jornada</a></li>
-                    </ul>
-                </li>
-  
-                <li class="gal">
-                    <a>Galería de fotos</a>
-                    <ul class="sub-menu sub-menu4">
-                        <li class="sub-menu-item primersub"><a href="../galeria/galeriaF.html">Fútbol</a></li>
-                        <li class="sub-menu-item"><a href="../galeria/galeriaB.html">Baloncesto</a></li>
-                        <li class="sub-menu-item"><a href="../galeria/galeriaVM.html">Volleyball masculino</a></li>
-                        <li class="sub-menu-item"><a href="../galeria/galeriaVF.html">Volleyball femenino</a></li>
-                    </ul>
-                </li>
-    
-                <li class="login"><a onclick="document.getElementById('id01').style.display='block'"">Log-in</a></li>
-  
-            </ul>
-        </div>
-      </nav>
-      <div id="icono-nav" onclick="responsiveMenu()">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
-
-        <!-- LOGIN -->
-        <div id="id01" class="modal">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Login">&times;</span>
-      
-          <form class="modal-content" action="">
-              <div class="imgcontainer">
-                  <img src="../img/UEM-usuario.png" alt="Avatar" class="avatar">
-              </div>
-          
-              <div class="container">
-                  <label for="uname"><b>Nombre de usuario</b></label>
-                  <input type="text" name="uname" required>
-          
-                  <label for="psw"><b>Contraseña</b></label>
-                  <input type="password" name="psw" required>
-          
-                  <button type="submit">Login</button>
-              </div>
-          
-              <div class="container" style="background-color:#f1f1f1">    
-                  <button type="button" onclick="document.getElementById('id02').style.display='block'"  class="cancelbtn">Registrarse</button>
-                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                  <span class="psw"><a href="#">¿Olvidaste tu contraseña?</a></span>
-              </div>
-          </form>
-      </div>
-      <div id="id02" class="modal">
-          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Login">&times;</span>
-      
-          <form class="modal-content" action="">
-              <div class="imgcontainer">
-                  <img src="../img/UEM-usuario.png" alt="Avatar" class="avatar">
-              </div>
-          
-              <div class="container">
-                  <label for="uname"><b>Nombre</b></label>
-                  <input type="text" name="uname" required>
-                  <label for="uname"><b>Apellidos</b></label>
-                  <input type="text" name="uname" required>
-                  <label for="uname"><b>Correo electrónico</b></label>
-                  <input type="text" name="uname" required>
-                  <label for="psw"><b>Contraseña</b></label>
-                  <input type="password" name="psw" required>
-          
-                  <button type="submit">Crear cuenta</button>
-              </div>
-          
-              <div class="container" style="background-color:#f1f1f1">
-                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Iniciar sesión</button>
-                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-                  <span class="psw"><a href="#">¿Olvidaste tu contraseña?</a></span>
-              </div>
-          </form>
-      </div>
-  </header>
+<?php require '../main/header.php'?>
   
    <!-- CLASIFICACION -->
    <section class="seccionE">
