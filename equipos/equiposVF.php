@@ -27,7 +27,7 @@
           <img src="../img/UEM-volleyF2.jpg" id="image_equipo">
         </div>
         <div class="introduccion_equipo">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repellendus incidunt provident aliquid corporis tempore quo maxime blanditiis, ab, cumque fugit libero sunt eaque distinctio. Quae voluptate veritatis corrupti quibusdam.</p>
+          <p>Nuestro equipo de volleyball masculino cuenta con 13 jugadores, un entrenador y un entrenador secundario. Este es el tercer año que juegan juntos para la mayoría de integrantes, es el equipo más veterano de la UEM y con las expectativas más grandes. Entrenan y juegan sus partidos en el polideportivo del edificio D, ¡Vente a animarles!</p>
         </div>
       </div>
       <div class="grid-top">
