@@ -27,7 +27,7 @@
           <img src="../img/UEM-volleyM.jpg" id="image_equipo">
         </div>
         <div class="introduccion_equipo">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repellendus incidunt provident aliquid corporis tempore quo maxime blanditiis, ab, cumque fugit libero sunt eaque distinctio. Quae voluptate veritatis corrupti quibusdam.</p>
+          <p>Nuestro equipo de volleyball femenino cuenta con 15 jugadoras, una entrenadora y una entrenadora secundaria. Este es su primer año jugando juntas, te animamos a apoyarlas en los partidos, en el polideportivo del edificio D. ¡Vamos UEM girls!</p>
         </div>
       </div>
       <div class="grid-top">

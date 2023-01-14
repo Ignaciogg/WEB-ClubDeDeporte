@@ -27,7 +27,7 @@
           <img src="../img/basket/J1/1.jpg" id="image_equipo">
         </div>
         <div class="introduccion_equipo">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repellendus incidunt provident aliquid corporis tempore quo maxime blanditiis, ab, cumque fugit libero sunt eaque distinctio. Quae voluptate veritatis corrupti quibusdam.</p>
+          <p>Nuestro equipo de baloncesto masculino cuenta con 12 integrantes, un entrenador y un segundo entrenador. Llevan jugando juntos desde el año pasado y las expectativas para este año son altas. Entrenan y juegan sus partidos en el polideportivo del edificio D, ¡Vente a animarles!</p>
         </div>
       </div>
       <div class="grid-top">

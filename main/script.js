@@ -1,10 +1,3 @@
-/* Scrolltrigger
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.to('.seccion',{
-
-})*/
-
 // Nav fixed
 const nav = document.querySelector('#nav');
 const navTop = nav.offsetTop;
@@ -22,8 +15,6 @@ function stickyNavigation() {
     document.body.classList.remove('fixed-nav');
   }
 }
-
-window.addEventListener('scroll', stickyNavigation);
 
 // Login
 var modal = document.getElementById("id01");
