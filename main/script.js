@@ -50,3 +50,29 @@ function responsiveMenu(){
 $('.carousel').carousel({
   interval: false
 })
+
+function validarFormulario() {
+  //evento.preventDefault();
+  var usuario = document.getElementById('nombre_registro').value;
+  var apellido = document.getElementById('apellido_registro').value;
+  var correo = document.getElementById('correo_registro').value;
+  var pass = document.getElementById('pass_registro').value;
+  re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+  if(usuario.length == 0) {
+    alert('Nombre no válido');
+    return;
+  }  
+  else if (apellido.length == 0) {
+    alert('Apellidos no válido');
+    return;
+  }
+	else if(!re.exec(correo)){
+		alert('email no valido');
+    return;
+  }
+  else if (pass.length < 6) {
+    alert('La contraseña debe tener más de 6 caracteres');
+    return;
+  }
+  return true;
+}
