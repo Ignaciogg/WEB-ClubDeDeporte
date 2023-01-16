@@ -69,6 +69,7 @@ nav{
 	list-style: none;
 	display: flex;
 	margin-right: 4.5%;
+	
 }
 
 .menu-ul li a{
@@ -137,8 +138,8 @@ ul {
 }
 
 .primersub2{
-	margin-top: 30%;
-	padding-top: 8%;
+	margin-top: 15%;
+	padding-top: 2%;
 }
 
 .primersub {
@@ -180,13 +181,23 @@ form {
 	border: 3px solid #f1f1f1;
 }
   
-input[type=text], input[type=password] {
+
+.log_form{
 	padding: 12px 20px;
 	margin: 8px 0;
 	display: inline-block;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
-	width: 24%;
+	width: 30%;
+}
+
+input[type=password] {
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	width: 20%;
 }
   
 button {
@@ -469,7 +480,7 @@ section {
 }
 
 /* INSTANCIA*/
-input[type=text], select, textarea {
+.instancia_form, select, textarea {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -804,7 +815,7 @@ input[type=submit]:hover {
 .blog_content{
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	background: #cc2936;
+	background: #85161f;
 }
 
 .h2_resumen{

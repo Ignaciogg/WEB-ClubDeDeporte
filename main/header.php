@@ -49,7 +49,7 @@
                                 ">Fútbol</a></li>
                                 <li class="sub-menu-item"><a href="../equipos/equiposB.php
                                 ">Baloncesto</a></li>
-                                <li class="sub-menu-item"><a href="../equipos/equiposVF.php
+                                <li class="sub-menu-item"><a href="../equipos/equiposVM.php
                                 ">Volleyball masculino</a></li>
                                 <li class="sub-menu-item"><a href="../equipos/equiposVF.php
                                 ">Volleyball femenino</a></li>
@@ -60,8 +60,7 @@
                             <li class="sub-menu3">
                                 <a>Blog</a>
                                 <ul class="sub-menu">
-                                    <li class="sub-menu-item primersub2"><a href="../contacto/blog.php
-                                    ">Resumen de la jornada</a></li>
+                                    <li class="sub-menu-item primersub2"><a href="../contacto/blog.php">Resumen de la jornada</a></li>
                                 </ul>
                             </li>
         
@@ -101,7 +100,7 @@
             
                 <div class="container">
                     <label for="uname"><b>Correo eléctronico</b></label>
-                    <input type="text" name="uname_login" id='user_login' required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+                    <input type="text" name="uname_login" class="log_form" id='user_login' required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
             
                     <label for="psw"><b>Contraseña</b></label>
                     <input type="password" name="psw_login" id='pass_login' required>
@@ -126,11 +125,11 @@
             
                 <div class="container">
                         <label for="uname"><b>Nombre</b></label>
-                        <input type="text" name="uname_registro" id='nombre_registro' required>
+                        <input type="text" name="uname_registro" class="log_form" id='nombre_registro' required>
                         <label for="lname"><b>Apellidos</b></label>
-                        <input type="text" name="lname_registro" id='apellido_registro' required>
+                        <input type="text" name="lname_registro" class="log_form" id='apellido_registro' required>
                         <label for="email"><b>Correo electrónico</b></label>
-                        <input type="text" name="email_registro" id='correo_registro'required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+                        <input type="text" name="email_registro" class="log_form" id='correo_registro'required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
                         <label for="psw"><b>Contraseña</b></label>
                         <input type="password" name="psw_registro" id='pass_registro' required minlength="6" >
                 

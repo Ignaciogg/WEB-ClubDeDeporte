@@ -20,10 +20,10 @@
                 <div class="container_instancia">
                     <form action="../main/instancia_bbdd.php" method="POST" id='formulario_instancia'>
                       <label for="fname">Nombre y apellidos</label>
-                      <input type="text" id="nombre_instancia" name="nombre_instancia" placeholder="Nombre">
+                      <input type="text" class="instancia_form" id="nombre_instancia" name="nombre_instancia" placeholder="Nombre">
                   
                       <label for="lname">Correo electrónico</label>
-                      <input type="text" id="correo_instancia" name="correo_instancia" placeholder="Correo electrónico">
+                      <input type="text" class="instancia_form" id="correo_instancia" name="correo_instancia" placeholder="Correo electrónico">
                   
                       <label for="motivo_instancia">Motivo</label>
                       <select id="motivo_instancia" name="motivo_instancia">
